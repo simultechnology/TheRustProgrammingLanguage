@@ -4,22 +4,6 @@ pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
 
-mod front_of_house {
-    pub mod hosting {
-        pub fn add_to_waitlist() {}
-
-        fn seat_at_table() {}
-    }
-
-    mod serving {
-        fn take_order() {}
-
-        fn serve_order() {}
-
-        fn take_payment() {}
-    }
-}
-
 fn server_order() {}
 
 mod back_of_house {
@@ -49,8 +33,10 @@ mod back_of_house {
 
 }
 
-pub use crate::front_of_house::hosting;
+mod front_of_house;
+// pub use crate::front_of_house::hosting;
 //use self::front_of_house::hosting;
+pub use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
     // Absolute path
