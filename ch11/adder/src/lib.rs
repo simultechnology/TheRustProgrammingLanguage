@@ -52,6 +52,7 @@ mod tests {
     use super::*;
 
     #[test]
+    #[ignore]
     fn exploration() {
         let result = add(2, 2);
         assert_eq!(result, 4);
@@ -63,6 +64,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore]
     fn greeting_contains_name() {
         let result = greeting("Carol");
         assert!(
@@ -79,6 +81,7 @@ mod tests {
     // }
 
     #[test]
+    #[ignore]
     fn larger_can_hold_smaller() {
         let larger = Rectangle {
             width: 8,
@@ -93,6 +96,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore]
     fn larger_cannot_hold_larger() {
         let larger = Rectangle {
             width: 8,
@@ -107,6 +111,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore]
     //予想値は100以下でなければなりません
     #[should_panic(expected = "Guess value must be less than or equal to 100")]
     fn greater_than_100() {
