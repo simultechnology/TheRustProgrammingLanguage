@@ -15,7 +15,11 @@ fn main() {
     );
 
     // println!("{}", simulated_expensive_calculation(100));
+    let x = 4;
+    let equal_to_x = |z| z == x;
 
+    let y = 4;
+    assert_eq!(equal_to_x(y));
 }
 
 fn generate_workout(intensity: u32, random_number: u32) {
@@ -104,7 +108,10 @@ fn call_with_different_values() {
 
     let v1 = c.value(1);
     let v2 = c.value(2);
-    
+
     assert_eq!(v1, 1);
     assert_eq!(v2, 2);
+
+    // let mut c2 = Casher::new(|a| a);
+    // let cv2 = c2.value("1");
 }
